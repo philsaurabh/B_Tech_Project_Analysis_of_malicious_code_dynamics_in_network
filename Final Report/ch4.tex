@@ -1,0 +1,70 @@
+\chapter{CONCLUSION AND FUTURE SCOPE}
+\section{Conclusion}
+For the analysis, a simplified IBR model with the normalized attack on SIQR model based targeted resources is
+introduced and analysis is done using theory of stability of ordinary differential equations consolidating
+rule base of firewall security. The decisive findings of the project are given below:
+\begin{enumerate}
+  \item In the introduced model, two equilibrium states are found of which one
+is malicious codes free equilibrium and other is endemic. Basic reproduction number for
+the non endemic equilibrium state has been monitored, and malicious code free
+ equilibrium was found stable, when $R_0$\textless1 and, the endemic equilibrium achieved stability when $R_0$$>$1. Here, local asymptotic stability is used to justify the result.
+  \item The coefficient of firewall security $m$ can be defined as
+\begin{equation}
+  m = - log_2 (a+b-ab).
+\end{equation}
+Where '$b$' measures the reaction of the files to the predetermined security rules. It is
+considered that the rate of malthreat propagation can be decreased by a proportion '$a$',
+when all received files tolerate the predetermined security rules.
+  \item It is observed that the basic reproduction number $R_0$ is not affected by the
+coefficient of firewall security and hence the features related to quality of the model don't
+change.
+\par Hence, it can be concluded that use of rule base defined for firewall security helps to alleviate the issue of propagation of
+malicious objects such as code in the network by minimizing the level of infected nodes
+at stable state.
+  \item The stability of the system is observed using local asymptotic stability method, and
+numerical simulation has been done to verify analytical results. Finally,
+most sensitive system parameters related to basic reproduction number are monitored using
+normalized forward sensitivity index.
+\end{enumerate}
+
+\par The sensitive parameters related to
+basic reproduction number are observed and shown in table \ref{rep}.
+\begin{center}
+\begin{table}[h]
+\label{rep}
+\begin{tabular}{|p{6 cm}|p{6 cm}|}
+\hline
+\bf Basic Reproduction Number &\bf  Sensitive Parameters \\
+\hline
+$R_{01}$ &$\beta_1, \mu, \eta$\\
+$R_{02}$ & $ d_2, \lambda$\\
+$\tilde R_0$ &$\tilde \beta_1,\tilde d_2,\tilde \mu,\tilde \eta$\\
+\hline
+\end{tabular}
+\caption{Sensitive parameters with respect to basic reproduction number}
+\end{table}
+\end{center}
+
+\par Table  4.2  shows the comparison between the proposed model and the earlier model(Jain, Bhargava, Soni and J. Dhar):
+\begin{center}
+\begin{table}[h]
+\label{comp}
+\begin{tabular}{|p{6 cm}|p{3 cm}|p{2 cm}|}
+\hline
+\bf Type of Analysis &\bf  Bhargava, Palash, Soni, Dhar &\bf Proposed Model \\
+\hline
+Total equilibrium states& 16 & 2\\
+Malicious code free equilibrium & 4 & 1\\
+Endemic equilibrium & 12 & 1\\
+Highly sensitive parameters& 2 to 4 & 0\\
+Moderately sensitive parameters& 3 to 5 & 2 to 4\\
+\hline
+\end{tabular}
+\caption{Comparison Table}
+\end{table}
+\end{center}
+
+
+\section{ Future Scope}
+The analysis can be extended by considering time variant recruitment rate and can be modified by using some antidotal nodes finding anti-virus security and susceptible nodes can also be more generalized. In all known epidemic mathematical models, an individual's treatment is done with sovereignty. With the help of this model and analysis, one can implement kill signal procedure through information propagation.
+\par The idea of quarantined nodes can also help an individual of an organization to get rid of some new computer network attacks like ransom-ware etc. Hence, the analysis proposes modified networking structure through which new network attacks can be contaminated and if it is not possible then this structure can minimize the probability of getting an infection for a network. 

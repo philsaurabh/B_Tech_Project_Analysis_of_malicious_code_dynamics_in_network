@@ -1,0 +1,178 @@
+%% FILE:   setspace.sty in SYS2.TEX.PUB.ISULATEX.STYLES
+%% AUTHOR: Erica M. S. Harris
+%% DATE:   April 1990
+%% DESCR:  LaTeX Document style option "setspace"
+%%         Usage:  \documentstyle[...,setspace,...]{...}
+%%         Based on the doublespace option created by Stephen Page.
+%%
+%%         This style option provides commands and environments for doing
+%%         double and  one-and-a-half spacing based on pt size.
+%%
+%%         Single spacing is the default.
+%%
+%%         Three commands, \doublespacing, \onehalfspacing, and
+%%         \singlespacing, are for use in the preamble to set the overall
+%%         spacing for the document.  If a different spacing is required then
+%%         the \setstretch{baselinestretch} command can be used in the
+%%         preamble to set the baselinestretch appropriately.  The default
+%%         spacing with this style option is single spacing.
+%%
+%%         Three environments, singlespace, onehalfspace, and doublespace,
+%%         allow the spacing to be changed within the document.  Both the
+%%         onehalfspace and doublespace environments are intended to increase
+%%         the spacing, so the onehalfspace environment should not be used in
+%%         a double spaced document.  If an increased spacing different from
+%%         one-and-a-half or double spacing is required then the spacing
+%%         environment can be used.  The spacing environment takes one
+%%         argument which is the larger baselinestretch to use,
+%%         e.g., \begin{spacing}{2.5}.
+%%
+%%         \footins is adjusted the same as \parskip - appears to work. Lose
+%%         stretch parts but don't consider that to be crucial
+%%
+%%         Removed code for altering spacing before and after displayed
+%%         equations - just looked too much.
+%%
+%% MODS:
+%%
+%% PLEASE REPORT ANY BUGS
+%%
+%%   Old Documentation follows:
+%%         1. A new environment "singlespace" is provided, within which single
+%%            spacing will apply.
+%%            JFL - changed so that it works in regular text and so that
+%%            vertical space before and after is correctly computed
+%%         2. Double spacing is turned off within footnotes and floats (figures
+%%            and tables).
+%%         3. Proper double spacing happens below tabular environments and in
+%%            other places where LaTeX uses a strut.
+%%         4. Slightly more space is inserted before footnotes.
+%%         5. JFL - fixes spacing before and after displayed math
+%%
+%%
+%%    mods:   Jean-Francois Lamy
+%%            lamy@ai.toronto.edu
+%%            lamy@utai.uucp
+%%
+%% POSSIBLE BUGS:
+%%    . Increasing struts may possibly cause some other obscure part of
+%%      formatting to fall over.
+%%    . \begin{singlespace}\begin{quote} produces the wrong spacing before
+%%      the quote (extra glue is inserted).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%---Set up double spacing
+
+\def\doublespacing{\ifcase \@ptsize \relax % 10pt
+    \def\baselinestretch{1.667}
+  \or % 11pt
+    \def\baselinestretch{1.618}
+  \or % 12pt
+    \def\baselinestretch{1.655}
+  \fi}
+%\doublespacing % the default
+
+\def\onehalfspacing{\ifcase \@ptsize \relax % 10pt
+    \def\baselinestretch{1.25}
+  \or % 11pt
+    \def\baselinestretch{1.213}
+  \or % 12pt
+    \def\baselinestretch{1.241}
+  \fi}
+
+\def\singlespacing{\def\baselinestretch{1}}
+
+\def\setstretch#1{\renewcommand{\baselinestretch}{#1}}
+
+%---Stretch the baseline BEFORE calculating the strut size. This improves
+%   spacing below tabular environments etc., probably...
+%   Comments are welcomed.
+\ifx\selectfont\undefined\gdef\@setsize#1#2#3#4{\@nomath#1\let\@currsize#1 %
+   \baselineskip #2\baselineskip\baselinestretch\baselineskip%
+   \parskip\baselinestretch\parskip%
+    \setbox\strutbox\hbox{\vrule height.7\baselineskip
+       depth.3\baselineskip width\z@}%
+   \skip\footins\baselinestretch\skip\footins%
+   \normalbaselineskip\baselineskip#3#4}\else
+\gdef\@setsize#1#2#3#4{\@nomath#1\size{#4}{#2}\selectfont%
+  \let\@currsize#1\baselineskip\baselinestretch\baselineskip%
+   \parskip\baselinestretch\parskip%
+   \skip\footins\baselinestretch\skip\footins}\fi
+
+%---Increase the space between last line of text and footnote rule.
+%\skip\footins 20pt plus4pt minus4pt
+
+%---Reset baselinestretch within footnotes and floats.
+
+\def\@xfloat#1[#2]{\ifhmode \@bsphack\@floatpenalty -\@Mii\else
+   \@floatpenalty-\@Miii\fi\def\@captype{#1}\ifinner
+      \@parmoderr\@floatpenalty\z@
+    \else\@next\@currbox\@freelist{\@tempcnta\csname ftype@#1\endcsname
+       \multiply\@tempcnta\@xxxii\advance\@tempcnta\sixt@@n
+       \@tfor \@tempa :=#2\do
+                        {\if\@tempa h\advance\@tempcnta \@ne\fi
+                         \if\@tempa t\advance\@tempcnta \tw@\fi
+                         \if\@tempa b\advance\@tempcnta 4\relax\fi
+                         \if\@tempa p\advance\@tempcnta 8\relax\fi
+         }\global\count\@currbox\@tempcnta}\@fltovf\fi
+    \global\setbox\@currbox\vbox\bgroup
+    \def\baselinestretch{1}\@normalsize
+    \boxmaxdepth\z@
+    \hsize\columnwidth \@parboxrestore}
+
+\long\def\@footnotetext#1{\insert\footins{\def\baselinestretch{1}\footnotesize
+    \interlinepenalty\interfootnotelinepenalty
+    \splittopskip\footnotesep
+    \splitmaxdepth \dp\strutbox \floatingpenalty \@MM
+    \hsize\columnwidth \@parboxrestore
+   \edef\@currentlabel{\csname p@footnote\endcsname\@thefnmark}\@makefntext
+    {\rule{\z@}{\footnotesep}\ignorespaces
+      #1\strut}}}
+
+% A single spaced quote (say) is done by surrounding singlespace with quote.
+%
+\def\singlespace{%
+\vskip\parskip%
+\vskip\baselineskip%
+\def\baselinestretch{1}%
+\ifx\@currsize\normalsize\@normalsize\else\@currsize\fi%
+\vskip-\parskip%
+\vskip-\baselineskip}
+
+\def\endsinglespace{\par}
+
+%  spacing, doublespace and onehalfspace all are meant to INCREASE the
+%  spacing (i.e. calling onehalfspace from within doublespace will not
+%  produce a graceful transition between spacings)
+%
+\def\spacing#1{\par%
+ \def\baselinestretch{#1}%
+ \ifx\@currsize\normalsize\@normalsize\else\@currsize\fi}
+
+\def\endspacing{\par%
+ \vskip \parskip%
+ \vskip \baselineskip%
+}% \endgroup%
+% \vskip -\parskip%
+% \vskip -\baselineskip%
+% \begingroup}
+
+% one and a half spacing is 1.5 x pt size
+\def\onehalfspace{\ifcase \@ptsize \relax  % 10pt
+     \spacing{1.25}
+   \or % 11pt
+     \spacing{1.213}
+   \or % 12pt
+     \spacing{1.241}
+   \fi}
+\let\endonehalfspace=\endspacing
+
+% double spacing is 2 x pt size
+\def\doublespace{\ifcase \@ptsize \relax % 10pt
+    \spacing{1.667}
+  \or % 11pt
+    \spacing{1.618}
+  \or % 12pt
+    \spacing{1.655}
+  \fi}
+\let\enddoublespace=\endspacing

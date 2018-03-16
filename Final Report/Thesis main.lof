@@ -1,0 +1,19 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Schematic Flow Diagram of the model}}{9}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Graph between node density and time for set A with initial population (0.4, 0.02, 0.02, 0.2, 0.50, 0.25, 0.25)}}{19}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Graph between node density and time for set A with initial population (0.30, 0.30, 0.11, 0.25, 0.50, 0.20, 0.25)}}{19}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Graph between node density and time for set B with initial population (0.2, 0.1, 0.3, 0.4, 0.5, 0.4, 0.2)}}{20}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Graph between node density and time for set B with initial population (0.2, 0.01, 0.03, 0.5, 0.4, 0.8, 0.2)}}{20}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Graph between node density and time for set C with initial population (20, 20, 15, 10, 10, 20, 10)}}{21}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Graph between node density and time for set D with initial population (50, 55, 40, 25, 10, 20, 25)}}{21}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Graph between Node Density and Time for set A with initial population (0.4 0.02 0.02 0.2 0.50 0.25 0.25)}}{23}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Graph between Node Density and Time for set B with initial population (0.2 0.1 0.3 0.4 0.5 0.4 0.2)}}{23}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Graph between Node Density and Time for set C with initial population (20 20 15 10 10 20 10)}}{24}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Graph between Node Density and Time for set D with initial population (20 1 10 20 50 20 75)}}{24}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Effect of $m_1$ (antivirus coefficient) on $ \mathaccentV {tilde}07EI_1$ when $\mathaccentV {tilde}07ER_0 < 1$}}{27}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Effect of $m_2$ (firewall coefficient) on $ \mathaccentV {tilde}07EI_1$ when $\mathaccentV {tilde}07ER_0 < 1$}}{28}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Effect of $m_1$ (antivirus coefficient) on $ \mathaccentV {tilde}07EI_1$ when $\mathaccentV {tilde}07ER_0 > 1$}}{28}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Effect of $m_2$ (firewall coefficient) on $ \mathaccentV {tilde}07EI_1$ when $\mathaccentV {tilde}07ER_0 > 1$}}{29}
+\addvspace {10\p@ }

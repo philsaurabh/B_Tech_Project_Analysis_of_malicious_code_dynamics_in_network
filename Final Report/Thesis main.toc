@@ -1,0 +1,41 @@
+\contentsline {chapter}{ABSTRACT}{ii}
+\contentsline {chapter}{LIST OF TABLES}{v}
+\contentsline {chapter}{LIST OF FIGURES}{vi}
+\contentsline {chapter}{\numberline {1}INTRODUCTION AND LITERATURE SURVEY}{2}
+\contentsline {section}{\numberline {1.1}Introduction}{2}
+\contentsline {subsection}{\numberline {1.1.1}Related Definitions}{2}
+\contentsline {subsection}{\numberline {1.1.2}Relation with epidemiology}{3}
+\contentsline {section}{\numberline {1.2}Numerical Tools Used}{3}
+\contentsline {section}{\numberline {1.3}Literature Review}{4}
+\contentsline {subsection}{\numberline {1.3.1}Drawbacks of earlier models}{5}
+\contentsline {subsubsection}{\numberline {1.3.1.1}Exposed Infected compartment}{5}
+\contentsline {subsubsection}{\numberline {1.3.1.2}I-R Interaction}{5}
+\contentsline {subsubsection}{\numberline {1.3.1.3}Not flexible for new types of attacks}{5}
+\contentsline {subsubsection}{\numberline {1.3.1.4}Both side Q compartment}{5}
+\contentsline {subsubsection}{\numberline {1.3.1.5}Permanent Recovery(R) compartment}{6}
+\contentsline {section}{\numberline {1.4}Objective}{6}
+\contentsline {section}{\numberline {1.5}Organization of Thesis}{6}
+\contentsline {chapter}{\numberline {2}DESIGN DETAILS AND IMPLEMENTATION}{7}
+\contentsline {section}{\numberline {2.1}Compartment Description}{7}
+\contentsline {section}{\numberline {2.2}Mathematical Model and Schematic Flow Diagram}{9}
+\contentsline {section}{\numberline {2.3}Non-dimensionalisation}{11}
+\contentsline {section}{\numberline {2.4}Boundedness of the System}{12}
+\contentsline {chapter}{\numberline {3}RESULTS AND DISCUSSION}{14}
+\contentsline {section}{\numberline {3.1}Steady States and their Stability}{14}
+\contentsline {subsection}{\numberline {3.1.1}Equilibrium Points}{14}
+\contentsline {section}{\numberline {3.2}Basic Reproduction Number}{15}
+\contentsline {section}{\numberline {3.3} Local Asymptotic Stability}{16}
+\contentsline {section}{\numberline {3.4}Numerical Experimentation}{17}
+\contentsline {subsection}{\numberline {3.4.1}Feasible Steady States}{17}
+\contentsline {subsection}{\numberline {3.4.2}Special Cases}{22}
+\contentsline {section}{\numberline {3.5}Estimation of media coverage factor (firewall security coefficient)}{25}
+\contentsline {subsection}{\numberline {3.5.1} Order of Rule Enforcement}{25}
+\contentsline {subsection}{\numberline {3.5.2}Firewall rule priority}{25}
+\contentsline {subsection}{\numberline {3.5.3}Authenticated bypass}{25}
+\contentsline {subsection}{\numberline {3.5.4}Block connection}{25}
+\contentsline {subsection}{\numberline {3.5.5}Allow connection}{26}
+\contentsline {section}{\numberline {3.6}Sensitivity Analysis}{30}
+\contentsline {chapter}{\numberline {4}CONCLUSION AND FUTURE SCOPE}{34}
+\contentsline {section}{\numberline {4.1}Conclusion}{34}
+\contentsline {section}{\numberline {4.2} Future Scope}{35}
+\contentsline {chapter}{REFERENCES}{35}

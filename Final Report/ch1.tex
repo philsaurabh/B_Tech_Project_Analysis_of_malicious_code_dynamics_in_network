@@ -1,0 +1,106 @@
+
+\chapter{INTRODUCTION AND LITERATURE SURVEY}
+The introduction with literature review, objective of this thesis and platform for the implementation is carried out in this chapter.
+\section{Introduction}
+The arrival of IT in the previous three or four decades has driven a significant
+ change in the process of data transfer and information exchange. The improvement
+  of network/ IT has put some critical issues like the need of a appropriate cyber security system
+to shield the important data stored on system and for data in transfer
+ from malevolent objects. Malicious code is any code intentionally integrated,
+converted or cut out from a software system to damage or debase
+ the system's predetermined function. To predict the behavior of cyber threats and to make the secure cyber system,
+ it is necessary to study and find out the different types of malicious objects
+ (Worm, virus, ransom-ware, etc.) and develop a mathematical
+ model to describe their flow and impact on the system. The stimulating movements of interrelatedness,
+  intricacy and resilience are provoking the grave risk posed by malicious object \cite{edtr15,edtr1,edtr3,edtr2}.
+
+\subsection{Related Definitions}
+\begin{enumerate}
+  \item {\bf Virus:} The part of malicious code that append to service host and propagate when the infected host program executes is known as a Virus.
+  \item {\bf Worms:} The piece of malicious code that carry out registered attacks to propagate across the computer network instead of appending themselves to a host program is known a Worm.
+  \item {\bf Trojan horse:} Malicious code which hides the malicious part inside a useful host program is known as a Trojan Horse.
+  \item {\bf Ransom-ware:} Ransom-ware is a type of malicious software from crypto-virology that blocks
+ access to the victim's data or threatens to publish it until an amount of release price(ransom) paid.
+\end{enumerate}
+All the above definitions are explained in \cite{edtr1}.
+\subsection{Relation with epidemiology}
+The above mentioned malicious codes have a severe threat to the security of the networks. A recognizable degradation in the performance
+can be observed in a computer with malicious objects in the breaking-out (B) state. Malicious codes can replicate themselves from one computer
+ to another without making anyone aware that the machine is affected. This malicious code problem is frequently emerging and increasing the
+vulnerability of the network. So, there is a necessity to develop a new counter defense techniques to control this threat.
+\par It is seen that the flow of artificial viruses in a system of networked computers could be compared with a disease transmitted
+ by vectors in the case of public health \cite{edtr1}. It is known that spreading of malicious code shows the epidemic nature, i.e., these codes
+ act like infectious diseases in the biological world.
+\par Various epidemic models for malicious codes propagation are based on mathematical modeling \cite{edtr4}, which provides an estimate of
+the evolution of malicious intent over the Computer networks. Mathematical models consider the important parameters responsible for malicious codes
+ propagation, such as rates of transmission and recovery, and identify how the malicious codes (or applications) will spread over a fixed period.
+\section{Numerical Tools Used}
+
+MATLAB and Mathematica tools are used to implement the project.
+At first, the analysis of dynamics of the model is done using the qualitative property of differential equations. Then MATLAB is used for  numerical analysis and validation. For the bridging of both analyses, the Mathematica
+software is used. In this way, the proposed model consisting
+target and attacker sides with different compartments is analyzed.
+Runge-Kutta-Fehlberg Method (RKF45)\cite{edtr22} and the concept of Jacobian Matrix and Eigen values are also applied for the solution and analysis purpose.
+\clearpage
+{\bf Key Features:} \\
+- Solutions of mathematical equations.\\
+-Graphical representation of node density vs. time for analyzing results. \\
+{\bf Versions:}\\
+- MATLAB 8.1 (2013a).\\
+- Wolfram Mathematica(11.1.1).
+\section{Literature Review}
+It is known that spreading of malicious code is epidemic in nature. Various epidemic models for malicious codes propagation are based on traditional SIR model \cite{edtr4,edtr1,edtr3}, which gives an estimate of the development of malicious codes in the computer networks.
+\par Many researchers have analyzed the simple epidemic models like Susceptible- Infected model and SIS model with varying population sizes \cite{edtr4,edtr5}.
+ In SIS and SIR models, they got two thresholds for the models with two types of formulation about the immunity loss and concluded that the number individuals
+ that are affected decreases continuously when there is increment in the value of t and finally, the infection diminishes when the basic reproduction
+ number is found less than 1 \cite{edtr18}.
+\par Mishra et al. proposed SEIRS and SEIQRS \cite{edtr7,edtr2} models and also provided the information and the propagation dynamics of malicious
+ objects(codes) and analyzed the cyber attacking behavior of infected nodes(computer system), while Yang and Yang figured out some of these differences with
+ some faults in the existing models and suggested a common SLBS model \cite{edtr16,edtr20,edtr8}. Coates and Thommes suggested an improved SEI
+ (susceptible-exposed- infected) model for the simulation of virus transmission \cite{edtr6} and many other identical models are proposed by various researchers.
+\par Reviewing of article on malicious code dynamics of model consisting two quarantine nodes, it is seen that in the model, both attacker and target sides
+ were taken each with same compartments, which is not reasonable many times \cite{edtr9}.
+ \par In \cite{edtr21}, a SIS model having two-dimensions with vaccination is proposed for paired border towns, which shows a backward
+ branching for some values of parameters. As the results, it was found that a vaccination campaign dedicated to decrease the value of a disease's reproduction
+ number below one may not get success to control the disease. So for the prevention of an epidemic outbreak, a large population of infective persons
+ can cause a high endemicity level to occur rather abruptly even if the reproduction number reduced by vaccine is below some threshold value.
+ \clearpage
+\subsection{Drawbacks of earlier models}
+The following drawbacks were found after the review of previous models :
+\subsubsection{Exposed Infected compartment}
+It is not possible that a computer doesn't have an infection. So, there is no need to consider the exposed state. Since once attacked by malicious code, a computer becomes infected
+ immediately and retains infection, because it can propagate this attack to those computers with some faults in the system. Therefore, an epidemic  model shouldn't possess any E compartment \cite{edtr15}.
+\subsubsection{I-R Interaction}
+In a well-defined epidemic model of malicious code propagation, Infected compartment should not interact only to the recovered state. The reasons are :
+\begin{enumerate}
+  \item There should have two Infected classified compartments, as I (Infected but not active) compartment for computers with the virus in latent state and B(breaking-out) compartment. The probability with which they recover should be the main issue in the process of modeling. Indeed, recovery of a breaking-out computer is faster  because it usually has a recognizable degradation in the performance, which can be identified by the user.
+  \item  In some networks, the phenomenon of quarantine nodes is also taken into consideration as a precaution measure. So, some of the infected nodes will be quarantined once the effect of the virus is known.
+\end{enumerate}
+\subsubsection{Not flexible for new types of attacks}
+In previous models, the possibility of new attacks like ransom-ware was not taken care. In new attacks like ransom-ware, the infected node becomes either a carrier
+ of the virus or bursts and then recovered. So, once the attacker gets control of the personal computer, he can either use it as carrier node, taking it to breaking out state or he can
+ hack it, whenever it is recovered.
+\subsubsection{Both side Q compartment}
+It is probable that a computer which is infected and the infection is breaking-out, then it can affect the nodes in other networks and quarantine is one of the precautions
+ which anyone can take. But, there is no need for the attacker to consider quarantine as he only wants to corrupt the network with malicious code. So,
+ precautions like isolated nodes may not be taken into account.
+\subsubsection{Permanent Recovery(R) compartment}
+It is possible that a computer which is recuperated be infected by new types of malicious codes as permanent immunity is impossible. So, an epidemic model should
+not contain any permanent R(recovered) compartment \cite{edtr15,edtr6}.
+\par In \cite{edtr12}, Some anti-malware software is installed in the computer network and continuously updated to minimize the affluence of malicious objects and infected
+computers. On analyzing the proposed model, two equilibria and a threshold dealing with the malevolent code dynamics were obtained in a network and
+characterization of stability behavior of equilibria derived for the given model is also explained.
+\par In \cite{edtr17}, traditional SIS model is extended to random process from a deterministic process and Stochastic differential equations for infected ones are formulated to prove uniqueness of a positive global solution of these equations and the conditions, for extinction and persistence of disease, are established.
+\par The thesis aims to analyze various malicious code dynamics which can
+ help the anti-malware software in protecting a computer network from malicious attack.
+\section{Objective}
+The objective of this thesis is to analyze the malicious code dynamics with the target and attacker nodes using a mathematical model. In which, a computer network with
+ the target and attacker nodes for malicious code propagation within the system (Computer network) is considered. The model consists of different compartments
+ (e.g., Susceptible, Infected, antidotal, etc.) and then a mathematical model is developed, and its various analytic behaviors are analyzed.
+
+\section{Organization of Thesis}
+The organization of thesis is described as follows: The literature review and discussion
+of the works done in section 1.3, whereas problem statement and
+objective are defined in section 1.4. In the next chapter(2), a compartmental model with firewall
+security coefficient is suggested, and numerical validation and simulation with the analysis of sensitivity are represented in chapter 3. At the end of the report, Conclusion and future scope of
+the proposed work are devised in chapter 4.

@@ -1,0 +1,2 @@
+Attaccker is solved analytically due to less complexity (attacker.nb) and target was solved by hit and trial method (numerically) due to more complexity(numerical equation.nb).
+Malicious free.nb is the overall program for the solution of 7 equations to get equilibrium.

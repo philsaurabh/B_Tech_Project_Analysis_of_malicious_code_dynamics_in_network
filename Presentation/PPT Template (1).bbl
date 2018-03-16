@@ -1,0 +1,36 @@
+\begin{thebibliography}{xx}
+
+\harvarditem[Bhargava et~al.]{Bhargava, Soni, Jain and Dhar}{2016}{edtr15}
+Bhargava, A., Soni, D.~K., Jain, P. and Dhar, J.: 2016, Dynamics of attack of
+  malicious codes on the targeted network: Effect of firewall, {\em
+  International Conference on Recent Trends in Information Technology (ICRTIT),
+  2016}, IEEE, pp.~1--6.
+
+\harvarditem[Chitnis et~al.]{Chitnis, Hyman and Cushing}{2008}{edtr14}
+Chitnis, N., Hyman, J.~M. and Cushing, J.~M.: 2008, Determining important
+  parameters in the spread of malaria through the sensitivity analysis of a
+  mathematical model, {\em Bulletin of Mathematical Biology} {\bf
+  70}(5),~1272--1296.
+
+\harvarditem[Gray et~al.]{Gray, Greenhalgh, Hu, Mao and Pan}{2011}{edtr17}
+Gray, A., Greenhalgh, D., Hu, L., Mao, X. and Pan, J.: 2011, A stochastic
+  differential equation sis epidemic model, {\em SIAM Journal on Applied
+  Mathematics} {\bf 71}(3),~876--902.
+
+\harvarditem{Kribs-Zaleta and Velasco-Hernandez}{2000}{edtr21}
+Kribs-Zaleta, C.~M. and Velasco-Hernandez, J.~X.: 2000, A simple vaccination
+  model with multiple endemic states, {\em Mathematical Biosciences} {\bf
+  164}(2),~183--201.
+
+\harvarditem[Misra et~al.]{Misra, Verma and Sharma}{2014}{edtr5}
+Misra, A.~K., Verma, M. and Sharma, A.: 2014, Capturing the interplay between
+  malware and anti-malware in a computer network., {\em Applied Mathematics and
+  Computation} {\bf 229},~340--349.
+
+\harvarditem{Sahu and Dhar}{2015}{edtr13}
+Sahu, G.~P. and Dhar, J.: 2015, Dynamics of an seqihrs epidemic model with
+  media coverage, quarantine and isolation in a community with pre-existing
+  immunity, {\em Journal of Mathematical Analysis and Applications} {\bf
+  421}(2),~1651--1672.
+
+\end{thebibliography}

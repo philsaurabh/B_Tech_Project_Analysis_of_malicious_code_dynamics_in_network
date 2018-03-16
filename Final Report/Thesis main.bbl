@@ -1,0 +1,112 @@
+\begin{thebibliography}{xx}
+
+\harvarditem[Beckley et~al.]{Beckley, Weatherspoon, Alexander, Chandler,
+  Johnson and Bhatt}{2013}{edtr18}
+Beckley, R., Weatherspoon, C., Alexander, M., Chandler, M., Johnson, A. and
+  Bhatt, G.~S.: 2013, Modeling epidemics with differential equation.
+
+\harvarditem[Bhargava et~al.]{Bhargava, Soni, Jain and Dhar}{2016}{edtr15}
+Bhargava, A., Soni, D.~K., Jain, P. and Dhar, J.: 2016, Dynamics of attack of
+  malicious codes on the targeted network: Effect of firewall, {\em
+  International Conference on Recent Trends in Information Technology (ICRTIT),
+  2016}, IEEE, pp.~1--6.
+
+\harvarditem[Chitnis et~al.]{Chitnis, Hyman and Cushing}{2008}{edtr14}
+Chitnis, N., Hyman, J.~M. and Cushing, J.~M.: 2008, Determining important
+  parameters in the spread of malaria through the sensitivity analysis of a
+  mathematical model, {\em Bulletin of Mathematical Biology} {\bf
+  70}(5),~1272--1296.
+
+\harvarditem[Cui et~al.]{Cui, Sun and Zhu}{2008}{edtr10}
+Cui, J., Sun, Y. and Zhu, H.: 2008, The impact of media on the control of
+  infectious diseases, {\em Journal of Dynamics and Differential Equations}
+  {\bf 20}(1),~31--53.
+
+\harvarditem{Fehlberg}{1969}{edtr22}
+Fehlberg, E.: 1969, Low-order classical runge-kutta formulas with stepsize
+  control and their application to some heat transfer problems.
+
+\harvarditem[Gray et~al.]{Gray, Greenhalgh, Hu, Mao and Pan}{2011}{edtr17}
+Gray, A., Greenhalgh, D., Hu, L., Mao, X. and Pan, J.: 2011, A stochastic
+  differential equation sis epidemic model, {\em SIAM Journal on Applied
+  Mathematics} {\bf 71}(3),~876--902.
+
+\harvarditem{Kermack and McKendrick}{1927}{edtr4}
+Kermack, W.~O. and McKendrick, A.~G.: 1927, A contribution to the mathematical
+  theory of epidemics, in: Proceedings of the royal society of london a:
+  Mathematical, physical and engineering sciences, {\em The Royal Society} {\bf
+  115},~700 -- 721.
+
+\harvarditem{Kribs-Zaleta and Velasco-Hernandez}{2000}{edtr21}
+Kribs-Zaleta, C.~M. and Velasco-Hernandez, J.~X.: 2000, A simple vaccination
+  model with multiple endemic states, {\em Mathematical Biosciences} {\bf
+  164}(2),~183--201.
+
+\harvarditem{Liu and an~Cui}{2008}{edtr11}
+Liu, Y. and an~Cui, J.: 2008, The impact of media coverage on the dynamics of
+  infectious disease, {\em International Journal of Biomathematics} {\bf
+  1}(01),~65--74.
+
+\harvarditem{McGraw and Morrisett}{2000}{edtr1}
+McGraw, G. and Morrisett, G.: 2000, Attacking malicious code: A report to the
+  infosec research council, {\em IEEE Software} {\bf 17},~33--41.
+
+\harvarditem{Mishra and Ansari}{2010}{edtr7}
+Mishra, B.~K. and Ansari, G.~M.: 2010, Mathematical models on interaction
+  between computer virus and antivirus software inside a computer system, {\em
+  International Journal of Computer and Network Security} {\bf 2},~84--89.
+
+\harvarditem{Mishra and Jha}{2010}{edtr20}
+Mishra, B.~K. and Jha, N.: 2010, Seiqrs model for the transmission of malicious
+  objects in computer network, {\em Applied Mathematical Modelling} {\bf
+  34}(3),~710--715.
+
+\harvarditem{Mishra and Prajapati}{2014}{edtr16}
+Mishra, B.~K. and Prajapati, A.: 2014, Mathematical model on attack by
+  malicious objects leading to cyber war, {\em International Journal of
+  Nonlinear Science} {\bf 17}(2),~145--153.
+
+\harvarditem{Mishra and Saini}{2007}{edtr8}
+Mishra, B.~K. and Saini, D.: 2007, Mathematical models on computer viruses,
+  {\em Applied Mathematics and Computation} {\bf 187}(2),~929--936.
+
+\harvarditem{Mishra and Singh}{2011}{edtr9}
+Mishra, B.~K. and Singh, A.~K.: 2011, Two quarantine models on the attack of
+  malicious objects in computer network, {\em Mathematical Problems in
+  Engineering} {\bf 2012}.
+
+\harvarditem{Mishra and Saini}{2013a}{edtr3}
+Mishra, B. and Saini, D.: 2013a, Mathematical models on computer viruses,
+  pp.~929--936.
+
+\harvarditem{Mishra and Saini}{2013b}{edtr2}
+Mishra, B. and Saini, D.: 2013b, Seirs epidemic model with delay for
+  transmission of malicious objects in computer network,  pp.~1476--1482.
+
+\harvarditem[Misra et~al.]{Misra, Verma and Sharma}{2014}{edtr5}
+Misra, A.~K., Verma, M. and Sharma, A.: 2014, Capturing the interplay between
+  malware and anti-malware in a computer network., {\em Applied Mathematics and
+  Computation} {\bf 229},~340--349.
+
+\harvarditem{Sahu and Dhar}{2012}{edtr12}
+Sahu, G.~P. and Dhar, J.: 2012, Analysis of an sveis epidemic model with
+  partial temporary immunity and saturation incidence rate, {\em Applied
+  Mathematical Modelling} {\bf 36}(3),~908--923.
+
+\harvarditem{Sahu and Dhar}{2015}{edtr13}
+Sahu, G.~P. and Dhar, J.: 2015, Dynamics of an seqihrs epidemic model with
+  media coverage, quarantine and isolation in a community with pre-existing
+  immunity, {\em Journal of Mathematical Analysis and Applications} {\bf
+  421}(2),~1651--1672.
+
+\harvarditem[Wang et~al.]{Wang, Yang, Zhao and Zhang}{2015}{edtr6}
+Wang, F., Yang, Y., Zhao, D. and Zhang, Y.: 2015, A worm defending model with
+  partial immunization and its stability analysis, {\em Journal of
+  Communnications} {\bf 10}(4),~276--283.
+
+\harvarditem[Wang et~al.]{Wang, Zhou, Zhijun~Liuand and Zhang}{2017}{edtr19}
+Wang, L., Zhou, D., Zhijun~Liuand, D.~X. and Zhang, X.: 2017, Media alert in an
+  sis epidemic model with logistic growth, {\em Journal of Biological Dynamics}
+  {\bf 11}(sup1),~120--137.
+
+\end{thebibliography}
